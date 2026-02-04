@@ -17,11 +17,13 @@
 Создайте или отредактируйте файл `~/.gradle/gradle.properties`:
 
 ```properties
-githubPackagesUsername=Yasich217
-githubPackagesPassword=ваш_токен_здесь
+gpr.user=Yasich217
+gpr.key=ваш_токен_здесь
 ```
 
 Замените `ваш_токен_здесь` на токен, который вы скопировали на шаге 1.
+
+**Важно**: Используйте `gpr.user` и `gpr.key`, а не `githubPackagesUsername` и `githubPackagesPassword`.
 
 ## Шаг 3: Сборка
 
@@ -41,8 +43,11 @@ cd revanced-patches
 ```bash
 export ORG_GRADLE_PROJECT_githubPackagesUsername=Yasich217
 export ORG_GRADLE_PROJECT_githubPackagesPassword=ваш_токен
+export ANDROID_HOME=$HOME/android-sdk
 ./gradlew :patches:buildAndroid --no-daemon
 ```
+
+**Примечание**: Для работы также нужен Android SDK. Установите его через `yay -S android-sdk android-sdk-platform-tools android-sdk-build-tools` и настройте `ANDROID_HOME`.
 
 ## Проверка
 
