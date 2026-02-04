@@ -4,8 +4,8 @@ patches {
     about {
         name = "ReVanced Patches"
         description = "Patches for ReVanced"
-        source = "git@github.com:revanced/revanced-patches.git"
-        author = "ReVanced"
+        source = "https://github.com/Yasich217/revanced-patches.git"
+        author = "Yasich217"
         contact = "contact@revanced.app"
         website = "https://revanced.app"
         license = "GNU General Public License v3.0"
